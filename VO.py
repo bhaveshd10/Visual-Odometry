@@ -1,13 +1,12 @@
 from get_sift import *
 from essential_mat import *
-from plot_trajectory import *
-from descriptors import *
 import argparse
 
 '''
 The following script calculates the essential matrix based on K
 Breaking down the essential matrix to R and T to get the trajectory for VO
 '''
+
 parser = argparse.ArgumentParser()
 parser.add_argument('folder_path', action="store")
 parser.add_argument('K_path', action="store")
